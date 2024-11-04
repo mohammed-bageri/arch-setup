@@ -216,6 +216,14 @@ The installer will guide you through the following setup options:
    sudo pacman -Sy warp-terminal
    ```
 
+10. **Setup bluetooth (if you are on laptop)**
+
+    ```bash
+    sudo pacman -S bluez blueman bluez-utils
+    sudo modprobe btusb
+    sudo systemctl enable bluetooth && sudo systemctl start bluetooth
+    ```
+
 ---
 
 Enjoy your customized Arch Linux setup!
